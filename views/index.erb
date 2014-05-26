@@ -4,10 +4,8 @@
   </head>
 <h3> NFL Season </h3>
 <ol>
-    <li>Patriots</li>
-    <li>Broncos</li>
-    <li>Steelers</li>
-    <li>Colts</li>
+    <% @teams.each do |team|   %>
+      <li><p><a href=<%="#{team[:teams]}"%>></a></p></li>
 </ol>
 </br>
 <h3> Link to Leaderboard </h3>

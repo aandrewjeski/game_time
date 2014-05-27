@@ -2,9 +2,15 @@
     <title>Leaderboard</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-<h3> Leaderboard </h3>
+</center>
+<h1> Leaderboard </h1>
+<p>
 <ol>
-  <% @scores.each do |score| %>
-    <li><a href="/score/<%= score[:home_team] %>"> <%= "#{score[:home_team]}" %></a></li>
+  <% @ranking.each do |key, value| %>
+    <li><%= "#{key}: #{value["win"]} - #{value["loss"]} " %></li>
   <% end %>
 </ol>
+</p>
+</center>
+
+<!-- Due to tight deadline I will not style this page until later -->

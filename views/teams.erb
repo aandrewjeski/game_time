@@ -13,9 +13,9 @@
   </h1>
 
   <ul>
-    <% @scores.each do |score| %>
+    <% @scores.each do |team| %>
       <li>
-          <%= "#{score[:home_team]} #{score[:home_score]}" %>
+          <%= "#{team[:home_team]} #{team[:home_score]}" %>
       </li>
     <% end %>
   </ul>
